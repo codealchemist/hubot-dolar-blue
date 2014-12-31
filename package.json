@@ -1,0 +1,22 @@
+{
+  "name": "hubot-dolar-blue",
+  "version": "1.0.0",
+  "description": "Displays dolar blue values for the argentinian market from different sources, including dolarblue.net.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dolarblue",
+    "dolar",
+    "blue",
+    "argentina"
+  ],
+  "author": "Alberto Miranda <b3rt.js@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dolar-blue": "^0.1.2",
+    "imagemagick": "^0.1.3",
+    "request": "^2.51.0"
+  }
+}
