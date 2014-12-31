@@ -5,11 +5,11 @@ A hubot who knows about the argentinian dolar blue market.
 It will give you up to date rates based on several sources, including dolarblue.net, right inside your chat.
 
 ### Commands
-- `jarvis db` or `jarvis dolarblue`: Will output a string with rates obtained using dolar-blue package.
+- `jarvis db` or `jarvis dolarblue`: Will output a string with rates obtained using [dolar-blue](https://github.com/matiu/dolar-blue) package.
 - `jarvis dbn`: Will get the latest dolar blue rates published by dolarblue.net.
 - `jarvis dbn.all`: Will get the latest rates published by dolarblue.net (includes currencies and values other than dolar blue).
 
-Note: "jarvis" is the name I've gave to my bot, you should change that to whatever you like.
+**Note:** You should edit `src/index.js` and change _"jarvis"_ to whatever you like. This is the bot's name.
 Commands can be executed without the need to prepend the name of the bot when sending direct messages to it (db, dbn, etc.).
 
 ### Install
