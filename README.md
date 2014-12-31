@@ -26,3 +26,5 @@ Also, you'll need to have _imagemagick_ installed on your system.
 To run `dbn` you'll need to edit `src/index.js` and change the following vars:
 - `imagesPath`: path with write permissions where images will be downloaded.
 - `croppedImageUrl`: URL where you serve your cropped image (it's a crop from the original rates image provided by dolarblue.net).
+
+**Note:** Only two images are saved and rewritten each time, so no worries about disk space.
