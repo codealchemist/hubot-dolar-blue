@@ -58,10 +58,10 @@ function dolarbluebot(robot) {
     });
     
     robot.hear(/^jarvis dbn/i, function(msg){
-        var imagesPath = '/home/ubuntu/workspace/public/img/';
+        var imagesPath = 'YOUR-PATH-HERE'; // path with write permissions where latest images will be saved
             originalImagePath = imagesPath + 'dolarblue-original-latest.jpg',
             croppedImagePath = imagesPath + 'dolarblue-latest.jpg',
-            croppedImageUrl = 'https://hubot-appnexus-ar-codealchemist.c9.io/dolarblue';
+            croppedImageUrl = 'http://YOUR-URL-HERE/dolarblue'; // you'll need to have a webserver serving this image on this URL
         
         // TODO: use promises to remove callback hell
         getSourceImageUrl(function(imageUrl){
