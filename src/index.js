@@ -1,7 +1,8 @@
 var dolarblue = require('dolar-blue'),
     request = require("request"),
     im = require('imagemagick'),
-    fs = require('fs');
+    fs = require('fs'),
+    croppedImageUrl = '[YOUR-HUBOT-URL-HERE]';
 
 function dolarbluebot(robot) {
     function getEmoticon(sellValue) {
@@ -60,8 +61,7 @@ function dolarbluebot(robot) {
     robot.hear(/^jarvis dbn/i, function(msg){
         var imagesPath = '/home/ubuntu/workspace/public/img/';
             originalImagePath = imagesPath + 'dolarblue-original-latest.jpg',
-            croppedImagePath = imagesPath + 'dolarblue-latest.jpg',
-            croppedImageUrl = 'https://hubot-appnexus-ar-codealchemist.c9.io/dolarblue';
+            croppedImagePath = imagesPath + 'dolarblue-latest.jpg';
         
         // TODO: use promises to remove callback hell
         getSourceImageUrl(function(imageUrl){
