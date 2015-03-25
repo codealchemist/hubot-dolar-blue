@@ -58,10 +58,10 @@ function dolarbluebot(robot) {
     });
     
     robot.hear(/^jarvis dbn/i, function(msg){
-        var imagesPath = 'YOUR-PATH-HERE'; // path with write permissions where latest images will be saved
+        var imagesPath = '/home/ubuntu/workspace/public/img/';
             originalImagePath = imagesPath + 'dolarblue-original-latest.jpg',
             croppedImagePath = imagesPath + 'dolarblue-latest.jpg',
-            croppedImageUrl = 'http://YOUR-URL-HERE/dolarblue'; // you'll need to have a webserver serving this image on this URL
+            croppedImageUrl = 'https://hubot-appnexus-ar-codealchemist.c9.io/dolarblue';
         
         // TODO: use promises to remove callback hell
         getSourceImageUrl(function(imageUrl){
@@ -78,7 +78,7 @@ function dolarbluebot(robot) {
             request({
                 uri: "http://dolarblue.net",
             }, function(error, response, body) {
-                var result = body.match(/http\:\/\/dolarblue\.net\/imagenes\/precio\/dolar-paralelo-.*\.jpeg/g),
+                var result = body.match(/http\:\/\/dolarblue\.net\/imagenes\/precio\/dolar-paralelo-.*\.[jpg|jpeg|png]+/g),
                     imageUrl = result[0];
                 
                 callback(imageUrl);
