@@ -1,6 +1,6 @@
 {
   "name": "hubot-dolar-blue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Displays dolar blue values for the argentinian market from different sources, including dolarblue.net.",
   "main": "index.js",
   "scripts": {
